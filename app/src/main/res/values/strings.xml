@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">OfficeTask</string>
+    <string name="kotlin_practice">Kotlin Practice</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup_here">SignUp Here</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone">Phone</string>
+    <string name="signup">SignUp</string>
+    <string name="dashboard">DashBoard</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movie_name">Movie Name</string>
+    <string name="top_rated_movies">Top Rated Movies</string>
+    <string name="treding_movies">Treding Movies</string>
+    <string name="latest_movies">Latest Movies</string>
+    <string name="movies">Movies</string>
+    <string name="upcoming_movies">UpComing Movies</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="now_playing_movies">Now Playing Movies</string>
+    <string name="moviename">Name :</string>
+    <string name="movieLanguage">Language :</string>
+    <string name="popularity">Popularity :</string>
+    <string name="release_date">Release Date</string>
+    <string name="overview">OverView :</string>
+    <string name="update">Update</string>
+    <string name="web_series">Web Series</string>
+    <string name="celebrities">Celebrities</string>
+    <string name="change_language">Change Language</string>
+    <string name="Hindi">हिन्दी</string>
+    <string name="Urdu">اردو</string>
+    <string name="english">English</string>
+    <string name="select_language">Select Language</string>
+    <string name="languages">Languages</string>
+</resources>

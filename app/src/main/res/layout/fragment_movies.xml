@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nav_movies"
+        tools:context="views.fragments.drawerNavigationFragments.MoviesFragment">
+
+        <TextView
+            android:id="@+id/TopRatedMovies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/top_rated_movies"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/topRatedMoviesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TopRatedMovies"/>
+
+        <TextView
+            android:id="@+id/TrendingMovies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upcoming_movies"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topRatedMoviesRecyclerView"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/UpcomingMoviesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TrendingMovies"/>
+
+        <TextView
+            android:id="@+id/PopularMovies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popular_movies"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/UpcomingMoviesRecyclerView"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/PopularMoviesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/PopularMovies"/>
+        <TextView
+            android:id="@+id/NowPlayingMovies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/now_playing_movies"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/PopularMoviesRecyclerView"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/NowPlayingMoviesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/NowPlayingMovies"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

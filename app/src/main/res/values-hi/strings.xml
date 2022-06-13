@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OfficeTask</string>
+    <string name="kotlin_practice">कोटलिन अभ्यास</string>
+    <string name="email">ईमेल</string>
+    <string name="password">पासवर्ड</string>
+    <string name="login">" लॉग इन करें"</string>
+    <string name="signup_here">पंजी यहॉ करे</string>
+    <string name="forgot_password">" पासवर्ड भूल गए"</string>
+    <string name="name">नाम</string>
+    <string name="confirm_password">" पासवर्ड की पुष्टि कीजिये"</string>
+    <string name="phone">" फ़ोन"</string>
+    <string name="signup">" साइन अप करें"</string>
+    <string name="dashboard">" डैशबोर्ड"</string>
+    <string name="settings">" समायोजन"</string>
+    <string name="logout">" लॉग आउट"</string>
+    <string name="hello_blank_fragment">" नमस्ते खाली टुकड़ा"</string>
+    <string name="movie_name">" फिल्म का नाम"</string>
+    <string name="top_rated_movies">" शीर्ष रेटेड फिल्में"</string>
+    <string name="treding_movies">" रुझान वाली फ़िल्में"</string>
+    <string name="latest_movies">नवीनतम फिल्में</string>
+    <string name="movies">" चलचित्र"</string>
+    <string name="upcoming_movies">" आने वाली फिल्में"</string>
+    <string name="popular_movies">" लोकप्रिय फिल्में"</string>
+    <string name="now_playing_movies">" अब चलचित्र चल रहा है"</string>
+    <string name="moviename">" नाम :"</string>
+    <string name="movieLanguage">भाषा :</string>
+    <string name="popularity">लोकप्रियता :</string>
+    <string name="release_date">" रिलीज़ की तारीख"</string>
+    <string name="overview">अवलोकन :</string>
+    <string name="update">अपडेट करें</string>
+    <string name="web_series">" वेब सीरीज"</string>
+    <string name="celebrities">" हस्तियाँ"</string>
+    <string name="change_language">" भाषा बदलो"</string>
+    <string name="Hindi">हिन्दी</string>
+    <string name="Urdu">اردو</string>
+    <string name="english">English</string>
+    <string name="select_language">" भाषा चुने"</string>
+    <string name="languages">" बोली"</string>
+</resources>
