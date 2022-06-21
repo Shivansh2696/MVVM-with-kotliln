@@ -3,9 +3,6 @@ package com.shivansh.officetask.views.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
 import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
@@ -24,12 +21,10 @@ import com.example.officetask.roomDB.AppDatabase
 import com.google.android.material.navigation.NavigationView
 import com.shivansh.officetask.R
 import com.shivansh.officetask.databinding.ActivityHomeBinding
-import com.shivansh.officetask.dialogs.ChooseLanguageDialog
 import com.shivansh.officetask.repositories.UserDatabaseRepo
 import com.shivansh.officetask.utils.ImageConverter.convertStringTOBitmap
 import com.shivansh.officetask.viewModelFactories.HomeActivityViewModelFactory
 import com.shivansh.officetask.viewModels.HomeActivityViewModel
-import kotlinx.coroutines.CoroutineScope
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding : ActivityHomeBinding
@@ -81,7 +76,8 @@ class HomeActivity : AppCompatActivity() {
         val navView: NavigationView = binding.navView
         navController = findNavController(R.id.container)
 
-        appBarConfiguration = AppBarConfiguration(setOf(R.id.nav_movies, R.id.nav_settings), drawerLayout)
+        appBarConfiguration = AppBarConfiguration(setOf(R.id.nav_entertainment, R.id.nav_settings
+                                            ,R.id.nav_language), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }

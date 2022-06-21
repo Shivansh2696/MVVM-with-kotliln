@@ -1,6 +1,7 @@
 package com.shivansh.officetask.adapters
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -14,19 +15,18 @@ import com.bumptech.glide.Glide
 import com.shivansh.officetask.R
 import com.shivansh.officetask.utils.AppConstants.IMAGE_BASE_URL
 import com.shivansh.officetask.views.activities.MovieFullDetailActivity
-import com.shivansh.officetask.views.fragments.drawerNavigationFragments.MoviesFragment
-import com.sunny.kotlinpractice.tmdbResponse.moviesResponse.Results
+import com.sunny.kotlinpractice.tmdbResponse.moviesResponse.MovieResults
 
-class MoviesAdapter(private val context: MoviesFragment) : RecyclerView.Adapter<MyViewHolder>() {
+class MoviesAdapter(private val context: Context?) : RecyclerView.Adapter<MoviesViewHolder>() {
 
-    private var list = mutableListOf<Results>()
+    private var list = mutableListOf<MovieResults>()
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MoviesViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.movies_recycler_card,parent,false)
-        return MyViewHolder(view)
+        return MoviesViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: MoviesViewHolder, position: Int) {
         holder.onBind(list[position],context)
     }
 
@@ -36,7 +36,7 @@ class MoviesAdapter(private val context: MoviesFragment) : RecyclerView.Adapter<
 
 
     @SuppressLint("NotifyDataSetChanged")
-    fun setList(list: List<Results>?){
+    fun setList(list: List<MovieResults>?){
         if(list != null){
             this.list = list.toMutableList()
             this.notifyDataSetChanged()
@@ -44,27 +44,29 @@ class MoviesAdapter(private val context: MoviesFragment) : RecyclerView.Adapter<
     }
 }
 
-class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)  {
+ class MoviesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)  {
     private val movieName : TextView = itemView.findViewById(R.id.movieName)
-    private val movieRating : TextView = itemView.findViewById(R.id.Rating)
-    private val releaseDate : TextView = itemView.findViewById(R.id.releaseDate)
+    private val movieRating : TextView = itemView.findViewById(R.id.movieRating)
+    private val releaseDate : TextView = itemView.findViewById(R.id.movieReleaseDate)
     private val movieImage : ImageView = itemView.findViewById(R.id.moviePoster)
     private val movieCard : CardView = itemView.findViewById(R.id.movieCard)
 
-    fun onBind(result: Results, context: MoviesFragment) {
+    fun onBind(result: MovieResults, context: Context?) {
         val image = IMAGE_BASE_URL+result.posterPath
-        Glide.with(context).load(image).into(movieImage)
+        if (context != null) {
+            Glide.with(context).load(image).into(movieImage)
+        }
 
         movieName.text = result.title
         movieRating.text = result.voteAverage.toString()
         releaseDate.text = result.releaseDate
 
         movieCard.setOnClickListener {
-            val intent = Intent(context.activity, MovieFullDetailActivity::class.java)
+            val intent = Intent(context, MovieFullDetailActivity::class.java)
             val bundle = Bundle()
             bundle.putSerializable("movieDetail",result)
             intent.putExtras(bundle)
-            context.startActivity(intent)
+            context?.startActivity(intent)
         }
     }
 }

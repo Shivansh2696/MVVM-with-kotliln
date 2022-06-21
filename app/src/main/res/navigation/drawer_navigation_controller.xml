@@ -3,27 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_controller"
-    app:startDestination="@id/nav_movies">
+    app:startDestination="@id/nav_entertainment">
 
 
     <fragment
-        android:id="@+id/nav_movies"
-        android:name="com.shivansh.officetask.views.fragments.drawerNavigationFragments.MoviesFragment"
-        android:label="@string/dashboard"
-        tools:layout="@layout/fragment_movies" />
+        android:id="@+id/nav_entertainment"
+        android:name="com.shivansh.officetask.views.fragments.drawerNavigationFragments.EntertainmentFragment"
+        android:label="@string/entertainment" />
+
     <fragment
         android:id="@+id/nav_settings"
         android:name="com.shivansh.officetask.views.fragments.drawerNavigationFragments.SettingsFragment"
         android:label="@string/settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
-        android:id="@+id/nav_logout"
-        android:name="com.shivansh.officetask.views.fragments.drawerNavigationFragments.LogoutFragment"
-        android:label="@string/logout"
-        tools:layout="@layout/fragment_logout" />
-    <fragment
         android:id="@+id/nav_language"
         android:name="com.shivansh.officetask.views.fragments.drawerNavigationFragments.ChangeLanguageFragment"
         android:label="@string/languages"
         tools:layout="@layout/fragment_change_language" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.shivansh.officetask.views.fragments.drawerNavigationFragments.LogoutFragment"
+        android:label="@string/logout"
+        tools:layout="@layout/fragment_logout" />
 </navigation>

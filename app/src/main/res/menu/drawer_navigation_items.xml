@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_movies"
-            android:title="@string/movies"
+            android:id="@+id/nav_entertainment"
+            android:title="@string/entertainment"
             android:icon="@drawable/ic_dashboard"/>
         <item
             android:id="@+id/nav_settings"
             android:title="@string/settings"
             android:icon="@drawable/ic_settings"/>
         <item
-            android:id="@+id/nav_logout"
-            android:title="@string/logout"
-            android:icon="@drawable/ic_logout"/>
-
-        <item
             android:id="@+id/nav_language"
             android:title="@string/languages"
             android:icon="@drawable/ic_languages"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:title="@string/logout"
+            android:icon="@drawable/ic_logout"/>
     </group>
 
 </menu>

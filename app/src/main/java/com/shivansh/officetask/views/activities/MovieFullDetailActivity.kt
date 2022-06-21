@@ -3,13 +3,11 @@ package com.shivansh.officetask.views.activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.shivansh.officetask.R
 import com.shivansh.officetask.databinding.ActivityMovieFullDetailBinding
-import com.shivansh.officetask.utils.AppConstants
 import com.shivansh.officetask.utils.AppConstants.IMAGE_BASE_URL
-import com.sunny.kotlinpractice.tmdbResponse.moviesResponse.Results
+import com.sunny.kotlinpractice.tmdbResponse.moviesResponse.MovieResults
 
 class MovieFullDetailActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMovieFullDetailBinding
@@ -17,7 +15,7 @@ class MovieFullDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_movie_full_detail)
 
-        val movie : Results = intent.extras?.getSerializable("movieDetail") as Results
+        val movie : MovieResults = intent.extras?.getSerializable("movieDetail") as MovieResults
 
         val movieBackground = IMAGE_BASE_URL +movie.backdrop_path
         Glide.with(this).load(movieBackground).into(binding.backGroundImage)

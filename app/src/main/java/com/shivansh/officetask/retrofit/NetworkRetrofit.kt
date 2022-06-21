@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 internal open class NetworkRetrofit() {
     private var httpClient: OkHttpClient.Builder? = null
-    private var moviesApi : MoviesApi
+    private var apiNames : ApiNames
 
     companion object{
         val instance : NetworkRetrofit by lazy { NetworkRetrofit() }
@@ -14,11 +14,11 @@ internal open class NetworkRetrofit() {
 
     init {
         httpClient = OkHttpClient.Builder()
-        moviesApi = create("https://api.themoviedb.org/3/",MoviesApi::class.java)
+        apiNames = create("https://api.themoviedb.org/3/",ApiNames::class.java)
     }
 
-    fun getMoviesApi(): MoviesApi {
-        return moviesApi
+    fun getApi(): ApiNames {
+        return apiNames
     }
 
     private fun <T> create(baseUrl : String, cls : Class<T>) : T{

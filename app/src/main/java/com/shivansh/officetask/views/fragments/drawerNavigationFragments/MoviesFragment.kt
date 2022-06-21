@@ -38,7 +38,7 @@ class MoviesFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this)[MoviesViewModel::class.java]
 
-        topRatedMoviesAdapter = MoviesAdapter(this)
+        topRatedMoviesAdapter = MoviesAdapter(context)
         topRatedMoviesRecyclerView = binding.topRatedMoviesRecyclerView
         topRatedMoviesRecyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL,false)
         topRatedMoviesRecyclerView.setHasFixedSize(true)
@@ -48,7 +48,7 @@ class MoviesFragment : Fragment() {
             topRatedMoviesAdapter.setList(it)
         })
 
-        upcomingMoviesAdapter = MoviesAdapter(this)
+        upcomingMoviesAdapter = MoviesAdapter(context)
         upcomingMoviesRecyclerView = binding.UpcomingMoviesRecyclerView
         upcomingMoviesRecyclerView.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
         upcomingMoviesRecyclerView.setHasFixedSize(true)
@@ -58,7 +58,7 @@ class MoviesFragment : Fragment() {
             upcomingMoviesAdapter.setList(it)
         })
 
-        popularMoviesAdapter = MoviesAdapter(this)
+        popularMoviesAdapter = MoviesAdapter(context)
         popularMoviesRecyclerView = binding.PopularMoviesRecyclerView
         popularMoviesRecyclerView.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL, false)
         popularMoviesRecyclerView.setHasFixedSize(true)
@@ -68,7 +68,7 @@ class MoviesFragment : Fragment() {
             popularMoviesAdapter.setList(it)
         })
 
-        nowPlayingMoviesAdapter = MoviesAdapter(this)
+        nowPlayingMoviesAdapter = MoviesAdapter(context)
         nowPlayingMoviesRecyclerView = binding.NowPlayingMoviesRecyclerView
         nowPlayingMoviesRecyclerView.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
         nowPlayingMoviesRecyclerView.setHasFixedSize(true)

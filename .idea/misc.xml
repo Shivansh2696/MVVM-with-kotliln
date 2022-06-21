@@ -22,6 +22,7 @@
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/dialog_update_user_profile.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_change_language.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_dash_board.xml" value="0.25" />
+        <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_entertainment.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_logout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_movies.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_movies_data.xml" value="0.20416666666666666" />
@@ -30,6 +31,8 @@
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_web_series.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/header_layout.xml" value="0.25" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/movies_recycler_card.xml" value="0.25" />
+        <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/person_recycler_card.xml" value="0.25" />
+        <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/tv_show_recycler_card.xml" value="0.33" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/menu/bottom_navigation_items.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/menu/change_language_menu.xml" value="0.25" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/menu/drawer_navigation_items.xml" value="0.20416666666666666" />
