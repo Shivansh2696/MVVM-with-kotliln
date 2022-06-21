@@ -13,12 +13,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".views.activities.entertainment.AllCelebrityActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".views.activities.entertainment.AllWebShowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.activities.entertainment.AllMoviesActivity"
+            android:exported="false" />
         <activity
             android:name=".views.activities.UpdateProfileDialogActivity"
+            android:exported="false"
             android:label="UpdateProfile"
-            android:theme="@style/Theme.Material3.Light.Dialog"
             android:parentActivityName=".views.activities.HomeActivity"
-            android:exported="false" />
+            android:theme="@style/Theme.Material3.Light.Dialog" />
         <activity
             android:name=".views.activities.MovieFullDetailActivity"
             android:exported="false" />
