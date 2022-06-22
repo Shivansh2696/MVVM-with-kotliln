@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_controller"
+    app:startDestination="@id/topRated">
+    <fragment
+        android:id="@+id/topRated"
+        android:name="com.shivansh.officetask.views.fragments.moviesBottomNavigation.TopRatedMoviesFragment"
+        android:label="fragment_trending_movies"
+        tools:layout="@layout/fragment_top_rated_movies" />
+    <fragment
+        android:id="@+id/popular"
+        android:name="com.shivansh.officetask.views.fragments.moviesBottomNavigation.PopularMoviesFragment"
+        android:label="fragment_popular_movies"
+        tools:layout="@layout/fragment_popular_movies" />
+    <fragment
+        android:id="@+id/latest"
+        android:name="com.shivansh.officetask.views.fragments.moviesBottomNavigation.LatestMoviesFragment"
+        android:label="fragment_latest_movies"
+        tools:layout="@layout/fragment_latest_movies" />
+    <fragment
+        android:id="@+id/upcoming"
+        android:name="com.shivansh.officetask.views.fragments.moviesBottomNavigation.UpcomingMovieFragment"
+        android:label="fragment_upcoming_movie"
+        tools:layout="@layout/fragment_upcoming_movie" />
+    <fragment
+        android:id="@+id/NowPlaying"
+        android:name="com.shivansh.officetask.views.fragments.moviesBottomNavigation.NowPlayingMoviesFragment"
+        android:label="fragment_now_playing_movies"
+        tools:layout="@layout/fragment_now_playing_movies" />
+</navigation>

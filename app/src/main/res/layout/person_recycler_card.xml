@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/personCard"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/personImage"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_star"
+        android:layout_marginTop="175dp"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        android:id="@+id/personRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:layout_marginTop="176dp"
+        android:layout_marginStart="30dp"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/personName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Person Name"
+        android:textSize="12sp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="5dp" />
+
+
+</androidx.cardview.widget.CardView>

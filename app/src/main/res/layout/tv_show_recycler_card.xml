@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvShowCard"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/tvShowPoster"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_star"
+        android:layout_marginTop="175dp"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        android:id="@+id/tvShowRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:layout_marginTop="176dp"
+        android:layout_marginStart="30dp"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/tvShowName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tvshow Name"
+        android:textSize="12sp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="5dp" />
+
+    <TextView
+        android:id="@+id/tvShowReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Release Date"
+        android:textSize="12sp"
+        android:layout_marginTop="230dp"
+        android:layout_marginStart="5dp" />
+
+</androidx.cardview.widget.CardView>

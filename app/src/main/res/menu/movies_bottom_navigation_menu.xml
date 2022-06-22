@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/topRated"
+        android:title="@string/top_rated"
+        android:icon="@drawable/ic_trending"/>
+
+    <item android:id="@+id/popular"
+        android:title= "@string/popular"
+        android:icon="@drawable/ic_popular"/>
+
+    <item android:id="@+id/latest"
+        android:title="@string/latest"
+        android:icon="@drawable/ic_latest"/>
+
+    <item android:id="@+id/upcoming"
+        android:title="@string/upcoming"
+        android:icon="@drawable/ic_upcoming"/>
+
+    <item android:id="@+id/NowPlaying"
+        android:title="@string/now_playing"
+        android:icon="@drawable/ic_play"/>
+</menu>

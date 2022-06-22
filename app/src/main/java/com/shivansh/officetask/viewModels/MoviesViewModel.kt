@@ -14,6 +14,8 @@ class MoviesViewModel() : ViewModel() {
     val upcomingMovies = MutableLiveData<List<MovieResults>>()
     val popularMovies = MutableLiveData<List<MovieResults>>()
     val nowPlayingMovies = MutableLiveData<List<MovieResults>>()
+    val latestMovies = MutableLiveData<List<MovieResults>>()
+
 
     init {
        getMovies()
@@ -49,5 +51,12 @@ getting Movies Data from repository
                 nowPlayingMovies.value = nowPlayingMoviesList!!
             }
         }
+
+//        CoroutineScope(Dispatchers.IO).launch {
+//            val latestMoviesList =TmdbRepo.getLatestMovies().body()?.results
+//            withContext(Dispatchers.Main){
+//                latestMovies.value = latestMoviesList!!
+//            }
+//        }
     }
 }

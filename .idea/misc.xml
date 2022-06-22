@@ -14,7 +14,7 @@
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/activity_home.xml" value="0.22" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/activity_movie_full_detail.xml" value="0.22" />
-        <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/activity_see_all_movies.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/activity_see_all_movies.xml" value="0.2" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/activity_update_profile_dialog.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/activity_update_user_profile.xml" value="0.20416666666666666" />
@@ -26,19 +26,27 @@
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_change_language.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_dash_board.xml" value="0.25" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_entertainment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_latest_movies.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_logout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_movies.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_movies_data.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_now_playing_movies.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_popular_movies.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_popular_persons.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_setting.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_top_rated_movies.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_trending_movies.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_upcoming_movie.xml" value="0.19010416666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/fragment_web_series.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/header_layout.xml" value="0.25" />
+        <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/movies_full_detail_card.xml" value="0.25" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/movies_recycler_card.xml" value="0.25" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/person_recycler_card.xml" value="0.25" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/layout/tv_show_recycler_card.xml" value="0.33" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/menu/bottom_navigation_items.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/menu/change_language_menu.xml" value="0.25" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/menu/drawer_navigation_items.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/menu/movies_bottom_navigation_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/menu/navigation_items.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/sunnym/AndroidStudioProjects/OfficeTask/app/src/main/res/menu/option_menu.xml" value="0.20416666666666666" />
       </map>
